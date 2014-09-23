@@ -5,7 +5,7 @@
  * Description: Plugin add to homepage code required to activate new Sitelinks Search Box @ Google search
  * Author: PRyC
  * Author URI: http://PRyC.pl
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  
 /* CODE: */
 
-function pryc_wp_google_sitelinks_search_box() {
+function pryc_wp_google_sitelinks_search_box_snippest() {
 	if(is_home()) {
 		$site_url = network_site_url('/');
 		#echo $site_url;
@@ -53,7 +53,7 @@ function pryc_wp_google_sitelinks_search_box() {
 		<?php
 	}
 }
-add_action('wp_head', 'pryc_wordpress_google_sitelinks_search_box');
+add_action('wp_head', 'pryc_wp_google_sitelinks_search_box_snippest');
 
 
 /* END */
